@@ -6,8 +6,8 @@
 #ifndef CRUDTXT_H
 #define CRUDTXT_H
 
-
-#include <string.h>
+#include <iostream>
+#include <string>
 #include <fstream>
 #include <sstream>
 #include <vector>

@@ -4,7 +4,7 @@
 #include "datatxt.h"
 
 int main() {
-	std::cout<<"oooi"<<std::endl;
+
 	DataTXT bd("dados.txt");
 	
 	std::vector<std::string> dados = {"nome", "ano", "nota"}, lista;

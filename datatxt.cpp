@@ -1,5 +1,4 @@
 #include "datatxt.h"
-#include <iostream>
 
 DataTXT::DataTXT(){}
 
