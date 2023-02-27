@@ -1,8 +1,0 @@
-nome ano nota 
-adalberto 1ano 9.5 
-aninha 1ano 9.0 
-lene 7ano 2.5 
-
-
-
-
