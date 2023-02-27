@@ -5,16 +5,16 @@
 
 int main() {
 
-	DataTXT bd("dados.txt");
+	DataTXT bd("data.txt");
 	
-	std::vector<std::string> dados = {"nome", "ano", "nota"}, lista;
+	std::vector<std::string> dados = {"name", "age", "job"}, lista;
 	
 	bd.setParameter(dados);
 	
-	bd.add({"adalberto","1ano","9.5"});
-	bd.add({"regi","2ano","7.5"});
-	bd.add({"ana","4ano","5.5"});
-	bd.add({"lene","7ano","2.5"});
+	bd.add({"Robert","40","Teacher"});
+	bd.add({"Rock","35","Musician"});
+	bd.add({"Steave","20","Driver"});
+	bd.add({"Pocketnaro","60","Prisoner"});
 	
 	lista = bd.list();
 	
@@ -22,27 +22,27 @@ int main() {
 		std::cout<<i<<std::endl;
 	}
 
-	std::cout<<"\n\n"<<std::endl;
+	std::cout<<"\n"<<std::endl;
 	
 	
-	bd.remove({"regi","2ano","7.5"});
+	bd.remove({"Steave","20","Driver"});
 
 	lista = bd.list();
 	
 	for(auto i: lista){
 		std::cout<<i<<std::endl;
 	}
-	std::cout<<"\n\n"<<std::endl;
+	std::cout<<"\n"<<std::endl;
 	
 	
-	bd.update({"ana","4ano","5.5"},{"aninha","1ano","9.0"});
+	bd.update({"Pocketnaro","60","Prisoner"},{"Squead","75","President"});
 		
 	lista = bd.list();
 	
 	for(auto i: lista){
 		std::cout<<i<<std::endl;
 	}
-	std::cout<<"\n\n"<<std::endl;
+	std::cout<<"\n"<<std::endl;
 		
     
 	return 0;
